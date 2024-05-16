@@ -6,6 +6,8 @@ const fnameLabel = document.querySelector('.first_name label')
 const lnameLabel = document.querySelector('.last_name label')
 const emailLabel = document.querySelector('.email label')
 const phoneLabel = document.querySelector('.phone label')
+const test = document.querySelector('.phone label')
+
 
 
 function checkFirstname() {

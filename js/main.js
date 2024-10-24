@@ -23,35 +23,3 @@ goDown.addEventListener('click', function() {
 mobileIcon.addEventListener('click', function () {
     nav_links.classList.toggle('nav_show')
 })
-
-// image slider   
-
-const prev = document.getElementById('previous');
-const next = document.getElementById('next');
-const prevTool = document.querySelector('.prevTool')
-const nextTool = document.querySelector('.nextTool');
-
-const Images = ['/images/home.png', '/images/slide2.png', '/images/slide3.png']
-let imgCounter = 0;
-
-let Fname = 'Gorden';
-
-prev.addEventListener('click', () => {
-
-    alert(`This is ${Fname}`)
-
-    imgCounter--
-    if (imgCounter < 0) {
-        imgCounter = Images.length -1
-    }
-    document.querySelector('.imageSlide').src = Images[imgCounter]
-})
-
-next.addEventListener('click', () => {
-
-    imgCounter++
-    if (imgCounter >= Images.length) {
-        imgCounter = 0
-    }
-    document.querySelector('.imageSlide').src = Images[imgCounter]
-})
